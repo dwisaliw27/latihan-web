@@ -164,14 +164,19 @@ body {
 }
 
 .container {
-  width: 960px;
+  width: 1500px;
   margin: auto;
   background-color: white;
 }
 
 .header {
-  padding: 16px;
-  padding-bottom: 8px;
+  padding: 16px 80px;
+  border-bottom: 1px solid #7575756c;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .header .judul {
@@ -179,10 +184,13 @@ body {
   font-weight: bold;
 }
 
+.header ul {
+  text-align: center;
+}
+
 .header ul li {
   display: inline-block;
-  margin-top: 20px;
-  margin-right: 16px;
+  margin-right: 72px;
 }
 
 .header a {
@@ -196,18 +204,18 @@ body {
   color: white;
 }
 
-.hero {
-  height: 300px;
-  background-image: url(img/hero.jpg);
-  background-size: cover;
-  background-position: 0 -100px;
-}
-
 .main {
-  width: 600px;
+  width: 1000px;
   float: left;
   box-sizing: border-box;
-  padding: 16px;
+  padding: 80px 80px 0px 48px;
+}
+
+.main img {
+  width: 872px;
+  height: 400px;
+  object-fit: cover;
+  margin-bottom: 24px;
 }
 
 .main h2 {
@@ -232,10 +240,10 @@ body {
 }
 
 .sidebar {
-  width: 300px;
-  float: right;
-  box-sizing: border-box;
-  padding: 16px;
+  width: 450px;
+  position: fixed;
+  right: 250px;
+  top: 80px;
 }
 
 .sidebar h3 {
@@ -246,13 +254,20 @@ body {
 
 .sidebar img {
   width: 100px;
-  float: left;
-  margin: 4px;
+  border-radius: 50px;
+  margin-bottom: 16px;
+}
+
+.sidebar h4 {
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .sidebar p {
-  font-size: 16px;
+  font-size: 14px;
+  color: #757575;
 }
+
 .footer {
   background-color: #333333;
   padding: 16px;
